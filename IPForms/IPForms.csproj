@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90DA6F06-4C89-4B4D-92E1-A462ECB33959}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPForms</RootNamespace>
+    <AssemblyName>IPForms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GaussianNosieWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaussianNosieWindow.Designer.cs">
+      <DependentUpon>GaussianNosieWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThresholdWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThresholdWindow.Designer.cs">
+      <DependentUpon>ThresholdWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorChannelsWondow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorChannelsWondow.Designer.cs">
+      <DependentUpon>ColorChannelsWondow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerWindow.Designer.cs">
+      <DependentUpon>PowerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GaussianBlurWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaussianBlurWindow.Designer.cs">
+      <DependentUpon>GaussianBlurWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrayWindow.Designer.cs">
+      <DependentUpon>GrayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighPassWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighPassWindow.Designer.cs">
+      <DependentUpon>HighPassWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistogramWindow.Designer.cs">
+      <DependentUpon>HistogramWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageWindow.Designer.cs">
+      <DependentUpon>ImageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LowPassWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LowPassWindow.Designer.cs">
+      <DependentUpon>LowPassWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaussianNosieWindow.resx">
+      <DependentUpon>GaussianNosieWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThresholdWindow.resx">
+      <DependentUpon>ThresholdWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorChannelsWondow.resx">
+      <DependentUpon>ColorChannelsWondow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerWindow.resx">
+      <DependentUpon>PowerWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaussianBlurWindow.resx">
+      <DependentUpon>GaussianBlurWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrayWindow.resx">
+      <DependentUpon>GrayWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighPassWindow.resx">
+      <DependentUpon>HighPassWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramWindow.resx">
+      <DependentUpon>HistogramWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageWindow.resx">
+      <DependentUpon>ImageWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LowPassWindow.resx">
+      <DependentUpon>LowPassWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageFilters\ImageFilters.csproj">
+      <Project>{D1A1B984-2D39-497A-A58E-71510AD3BBF8}</Project>
+      <Name>ImageFilters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPControls\IPControls.csproj">
+      <Project>{C02DA3F1-4CC3-4099-B121-6044B2C68003}</Project>
+      <Name>IPControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\IPL.bmp" />
+    <Content Include="Resources\IPL2.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
